@@ -14,9 +14,9 @@ export default function AppRoutes() {
       <Routes>
         <Route path="/" element={<PaginaPadrao />}>
           <Route index element={<Inicio />} />
-          <Route path="/sobremim" element={<SobreMim />} />
-          <Route path="/posts/:id" element={<Post />} />
+          <Route path="sobremim" element={<SobreMim />} />
         </Route>
+        <Route path="/posts/:id" element={<Post />} />
         <Route path="*" element={<NaoEncontrado />} />
       </Routes>
       <Rodape />
