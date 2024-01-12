@@ -1,5 +1,6 @@
 import styles from "./NaoEncontrado.module.css";
 import erro404 from "../../assets/erro_404.png";
+import BotaoPrincipal from "../../componentes/BotaoPrincipal";
 
 export default function NaoEncontrado() {
   return (
@@ -10,7 +11,7 @@ export default function NaoEncontrado() {
         <p className={styles.paragrafo}>Tem certeza de que era isso que você estava procurando?</p>
         <p className={styles.paragrafo}>Aguarde uns instantes e recarregue a página, ou volte para a página inicial.</p>
         <div className={styles.botaoContainer}>
-          <button>Voltar</button>
+          <BotaoPrincipal>Voltar</BotaoPrincipal>
         </div>
         <img
           src={erro404}
